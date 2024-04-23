@@ -1,0 +1,236 @@
+:root {
+    --btn-text-color: #fff;
+    --accent-color: #F38181;
+    --main-color: #95E1D3;
+    --title-color: #333333;
+    --text-color: #B6B6B6;
+    --subscribe-btn-color: rgba(149, 225, 211, 100%);
+    --logo-header-fonts: "Montserrat", sans-serif;
+    --hader-menu-fonts: "Montserrat", sans-serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --paragraph-main-name: 'Roboto', sans-serif;
+    --name-team: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.active {
+    color: var(--accent-color)
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header-logo {
+    display: block;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: auto;
+    font-family: var(--logo-header-fonts);
+}
+
+.logo_container {
+    display: flex;
+}
+/* --------------------------------------------header---------------------------- */
+.nav-link {
+    color: var(--accent-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    color: var(--main-color);
+    position: relative;
+}
+
+.nav_link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+/* ----------------------------------------------------main------------------------------------------ */
+.paragraph_banner,
+.team_title {
+    font-family: Kaushan Script;
+    color: var(--title-color);
+    font-size: 24px;
+    margin-bottom: -20px;
+
+}
+
+.team_title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 17px;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 55px;
+    font-family: var(--hader-menu-fonts);
+}
+
+.title {
+    color: var(--title-color);
+    font-family: var(--logo-header-fonts);
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: block;
+    margin: 40px auto 65px;
+}
+
+.team-text {
+    text-align: center;
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    font-size: 15px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.team-name {
+    font-family: var(--name-team);
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+.team-position {
+    font-family: var(--paragraph-main-name);
+    color: var(--text-color);
+}
+
+.banner_main {
+    text-align: center;
+}
+
+.work-item {
+    display: flex;
+    width: 332px;
+    margin-right: 60px;
+    /* outline: 2px solid pink; */
+}
+
+.work-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    /* outline: 2px solid pink; */
+}
+
+.work_image {
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    fill: #95E1D3;
+}
+
+.work-sabmit {
+    font-size: 14px;
+    margin-top: 0;
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    ;
+
+}
+.team-wrap{
+    text-align: center;
+}
+.work-text {
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+}
+/* ----------------------------------------------------------footer----------------------------------------- */
+.footer-link {
+    color: var(--accent-color);
+
+}
+
+.footer_wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_line {
+    border-top: 1px solid var(--text-color);
+}
+
+.footer-text {
+    color: var(--title-color);
+    font-family: var(--logo-header-fonts);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+}
+
+::placeholder {
+    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    font-style: italic ;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    padding: 10px 0px 10px 0px;
+}
+
+.footer-input {
+    width: 150px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 2px solid var(--text-color);
+}
+
+.footer-input:focus {
+    outline: none;
+}
+
+.footer-btn {
+    color: var(--btn-text-color);
+    font-family: var(--logo-header-fonts);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    border: none;
+    background-color: var(--subscribe-btn-color);
+    width: 150px;
+    height: 39px;
+}
+.footer-btn:hover{
+    background-color: rgb(112, 186, 172);
+    cursor: pointer;
+}
